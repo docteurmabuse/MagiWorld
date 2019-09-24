@@ -1,0 +1,44 @@
+@startuml
+class Player{
+displayCharacterCreation()
+askCharacterClass
+}
+class Character{
+private int level
+private int constitution
+private int strength
+private int dexterity
+private int intelligence
+private String characterClass
+}
+class Warrior
+{
+
+}
+class Magician
+class Thieve
+
+interface Spell
+{
+ private String basicSpell
+ private string specialSpell
+}
+
+
+Character <|-- Warrior
+Character <|-- Magician
+Character <|-- Thieve
+
+Warrior <|-- Spell
+Magician <|-- Spell
+Thieve <|-- Spell
+
+
+
+class ArrayList {
+Object[] elementData
+size()
+}
+
+
+@enduml
