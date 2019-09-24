@@ -6,6 +6,7 @@ public class Game {
 	public Character getCharacter() {
 		return character;
 	}
+
 	public void displayCreationPlayer(){
 		System.out.println("Création du personnage du Joueur  1");
 	}
