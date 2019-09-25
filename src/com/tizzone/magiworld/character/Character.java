@@ -1,4 +1,4 @@
-package com.tizzone.magiworld;
+package com.tizzone.magiworld.character;
 
 public abstract class Character {
 	private int level;

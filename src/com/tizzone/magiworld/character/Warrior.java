@@ -1,6 +1,6 @@
-package com.tizzone.magiworld;
+package com.tizzone.magiworld.character;
 
-public class Warrior extends Character{
+public class Warrior extends Character {
 
 
 	public Warrior(final int level, final int constitution, final int strength, final int dexterity, final int intelligence) {

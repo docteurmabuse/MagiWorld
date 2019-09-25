@@ -1,8 +1,8 @@
-package com.tizzone.magiworld;
+package com.tizzone.magiworld.character;
 
-public class Magician extends Character {
+public class Thief extends Character {
 
-	public Magician(final int level, final int constitution, final int strength, final int dexterity, final int intelligence) {
+	public Thief(final int level, final int constitution, final int strength, final int dexterity, final int intelligence) {
 		super(level, constitution, strength, dexterity, intelligence);
 	}
 
