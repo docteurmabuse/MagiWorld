@@ -31,8 +31,30 @@ public class Game {
 		System.out.println("Veuillez choisir la classe de votre personnage (1: Guerrier, 2: Rôdeur, 3: Mage )");
 
 	}
+	public int askCapabilities(String category){
+		System.out.println(category +" du personnage ?");
+		int nbResponse=0;
+		System.out.println(category +" du personnage ?");
+		boolean responseIsGood;
+		do {
+			try {
+				nbResponse=sc.nextInt();
+				responseIsGood=(nbResponse >=0&&nbResponse<=100);
+			}
+			catch (Exception e) {
+				sc.nextInt();
+				responseIsGood=false;
+			}
+			if(responseIsGood){
 
-    public void runGames() {
+			}
+			else{
+				System.out.println("Vous devez choisir le" + category + " du personnage entre 0 et 100");
+			}
+		}while (!responseIsGood);
+		return  nbResponse;
+	}
+	public void runGames() {
 		for (int i=0;i<nblayer;i++)
 		{
 			displayCreationPlayer(i+1);
@@ -45,6 +67,7 @@ public class Game {
 		int nbCharacter = sc.nextInt();
 		this.DisplaySelectedCharacter(nbCharacter);
 	}
+
 
 
 	public void DisplaySelectedCharacter (int nbCharacter) {
