@@ -1,6 +1,6 @@
 package com.tizzone.magiworld;
 
-import com.tizzone.magiworld.character.Character;
+import com.tizzone.magiworld.player.Player;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -10,12 +10,12 @@ public class Game {
 	Scanner sc = new Scanner(System.in);
 
 	private int nblayer=2;
-    private Map <Character, Integer> players = new HashMap<Character, Integer>();
+    private Map <Player, Integer> players = new HashMap<Player, Integer>();
 
-	private Character character;
+	private Player player;
 
-	public Character getCharacter() {
-		return character;
+	public Player getPlayer() {
+		return player;
 	}
 
 	public void addPlayers(){

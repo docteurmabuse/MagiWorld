@@ -1,13 +1,13 @@
-package com.tizzone.magiworld.character;
+package com.tizzone.magiworld.player;
 
-public abstract class Character {
+public abstract class Player {
 	private int level;
 	private int constitution;
 	private int strength;
 	private int dexterity;
 	private int intelligence;
 
-	public Character(final int level, final int constitution, final int strength, final int dexterity, final int intelligence) {
+	public Player(final int level, final int constitution, final int strength, final int dexterity, final int intelligence) {
 		this.level = level;
 		this.constitution = constitution;
 		this.strength = strength;
