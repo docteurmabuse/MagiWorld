@@ -1,6 +1,6 @@
 package com.tizzone.magiworld.player;
 
-public abstract class Player {
+public class Player {
 	private int level;
 	private int constitution;
 	private int strength;

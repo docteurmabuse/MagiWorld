@@ -32,7 +32,7 @@ public void after() throws Exception {
 @Test
 public void Given_Warrior_When_DisplaySelected_Then_DisplayWarriorSentence(){
     System.setIn(new ByteArrayInputStream("1\n".getBytes()));
-    game.DisplaySelectedCharacter(1);
+    game.DisplaySelectedCharacter(1, 10, 50, 10, 10, 0);
 	assertEquals("Woarg je suis le Guerrier Joueur 1 niveau 10 je possède 50 de vitalité, 10 de force, 0 d'agilité et 0 d'intélligence\n", outContent.toString().replace("\r\n", "\n"));
 
 }

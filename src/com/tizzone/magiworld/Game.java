@@ -65,12 +65,15 @@ public class Game {
 	public void runGame() {
 		this.displayAvailableCharacter();
 		int nbCharacter = sc.nextInt();
-		this.DisplaySelectedCharacter(nbCharacter);
+		int level = 0;
+		int constitution;
+		int strength;
+		this.DisplaySelectedCharacter( nbCharacter, level,  constitution,  strength,  dexterity,  intelligence);
 	}
 
 
 
-	public void DisplaySelectedCharacter (int nbCharacter) {
+	public void DisplaySelectedCharacter (int nbCharacter,int level, int constitution, int strength, int dexterity, int intelligence) {
 		switch (nbCharacter){
 			case 1:
 				System.out.println("Woarg je suis le Guerrier Joueur 1 niveau 10 je possède 50 de vitalité, 10 de force, 0 d'agilité et 0 d'intélligence");
